@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> ...IMC... </title>
+
+<script>
+  
+	function Cal_peso()
+	{
+		x=eval (document.imc.peso.value) /eval ((document.imc.altura.value)*eval(document.imc.altura.value));
+		document.imc.IMC.value=x;
+	}
+
+	
+</script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-responsive">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+     
+          <li class="active">
+  <a href="file:///G:/Meus%20testes/Prontos/IMC/Imc.html"> Calcule seu IMC novamente <span class="sr-only">(current)</span></a></li>      
+      </button>
+    </div>
+
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="file:///G:/Meus%20testes/Prontos/IMC/Imc.html"> Calcule seu IMC novamente <span class="sr-only">(current)</span></a></li>      
+
+</div>
+</div>
+</nav>
+
+<div class = "containerdois">
+<div class="row">
+
+<div class="col-md-12" align = "center">
+	        <img class="img-responsive" src="img/imc.png"><br>
+</div>
+
+<div class = "cold-md-12" align = "center"> 
+
+<form name="imc">
+	<h1>
+    Digite seu nome completo.
+    </h1>
+
+    <h2>
+    Nome: <input type="text" name="nome" value="" size="50" maxlength="50"><br><br>
+    </h2>
+
+    <h1>
+    Digite sua idade.
+    </h1>
+
+    <h2>
+    Idade: <input type="text" name="idade" value="" size="5" maxlength="5"> <br><br>
+    </h2>
+
+    <h1>
+	Digite seu peso e sua altura nos campos abaixo. <br><br>
+    </h1>
+
+    <h2>
+	Peso: <input type="text" name="peso" value="" size="5" maxlength="5"><br>
+	Altura: <input type="text" name="altura" value="" size="5" maxlength="5"><br><br>
+    </h2>
+
+	<h1>Clique no botão abaixo para verificar e exibir o resultado do seu IMC.</h1><br>
+
+	<h2>
+		<input type="button" value="Calcular IMC" onclick="Cal_peso()"><br><br>
+	Resultado do IMC: <input type="text" name="IMC" value="" size="10" maxlength="0"><br>
+    </h2>
+
+</form>
+
+</div>
+</div>
+</div>	
+
+<nav class="navbar navbar-inverse"></nav>
+
+
+</body>
+</html>
